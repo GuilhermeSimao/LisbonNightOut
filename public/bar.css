@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* 
+   PAGE DEFAULTS 
+*/
+
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+html{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+body
+{
+    min-height: 1000px;
+}
+
+/* 
+    NAVIGATION BAR
+*/
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 70px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.sticky
+{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    opacity: 0.9;
+    padding: 10px 50px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.05);
+}
+header .nav-logo
+{
+    color: cornsilk;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.sticky .nav-logo
+{
+    color: rgb(36, 35, 36);
+}
+header .nav-logo span
+{
+   color: rgb(180, 51, 255); 
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li 
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a
+{
+    text-decoration:none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: cornsilk;
+}
+
+header .navigation li a:hover
+{
+    color: rgb(180, 51, 255);
+}
+
+.sticky .navigation li a{
+    color: black;
+}
+
+/* 
+    BANNER FROM LANDING PAGE
+*/
+
+p
+{
+    font-weight: 300;
+    color: rgb(36, 35, 36);
+}
+
+.bg
+{   
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background:url(/img/festival-bg-3.jpg);
+    background-size: cover;
+    opacity: 0.85;
+}
+
+.bg .bg-content
+{
+    max-width: 900px;
+    text-align: center;
+}
+
+.bg .bg-content h2
+{
+    font-size: 5em;
+    color: cornsilk;
+    
+}
+.bg .bg-content p
+{
+    font-size: 1.5rem;
+    color: cornsilk;
+    
+}
+.btn
+{
+    font-size: 1.5rem;
+    color:cornsilk;
+    background:rgb(180, 51, 255);
+    display: inline-block;
+    padding:10px 30px;
+    margin-top: 20px;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+.btn:hover
+{
+    background:rgb(180, 51, 255, 60%);
+}
+
+
+@media (max-width: 991px)
+{
+    header, header.sticky
+    {
+        padding:10px 20px;
+    }
+    header .navigation
+    {
+        display:none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100%-68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    }
+    header .navigation li
+    {
+        margin-left: 0;
+    }
+    header .navigation li a
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle
+    {
+        position:relative;
+        width: 40px;
+        height: 40px;
+        background: url(/img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position:center;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .menuToggle.active
+    {
+        background: url(/img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    header.sticky .menuToggle
+    {
+        filter:invert(1);
+    }
+    section
+    {
+        padding: 20px;;
+    }
+    .bg .bg-content h2
+    {
+        font-size: 3em;
+        color: cornsilk;
+    
+    }
+    .bg .bg-content p
+    {
+        font-size: 1em;
+        color: cornsilk;
+    
+    }
+}
+@media (max-width: 991px)
+    {
+        .bg .bg-content h2
+    {
+        font-size: 2.2em;
+        color: cornsilk;
+    
+    }
+    }

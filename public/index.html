@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta namme="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisbon Night Out</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class= "nav-logo">NIGHT OUT<span>.</span></a>
+        <div class="menuToggle" onclick="menuToggle();"></div>
+        <ul class="navigation">
+            <li><a href="#about" onclick="menuToggle();">About</a></li>
+            <li><a href="#events" onclick="menuToggle();">Events</a></li>
+            <li><a href="#bars" onclick="menuToggle();">Bars</a></li>
+            <li><a href="#clubs" onclick="menuToggle();">Clubs</a></li>
+        </ul>
+    </header>
+    <section class = "bg">
+        <div class="bg-content">
+            <h2>WELCOME TO LISBON NIGHT OUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Pariatur delectus quisquam quas saepe vero sed ipsam rem velit.
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#events" class="btn">Check Upcoming Events</a>
+        </div>
+    </section> 
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50 about-text">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nulla necessitatibus consequatur voluptas voluptatibus cum ex reiciendis, 
+                nisi ipsam. Ea nulla sit distinctio porro aspernatur excepturi, dolor nemo perferendis totam cupiditate!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio similique laborum impedit, 
+                error distinctio provident quae modi veritatis ipsa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Libero omnis ea eaque praesentium error at unde molestiae magni reiciendis ipsa iste,
+                perspiciatis, odio, officia perferendis eum ut vitae officiis. Minus.</p>
+            </div>
+            <div class="col50">
+                <div class="img-container">
+                    <img src="/img/dj-about.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="events">
+        <div class="title">
+            <h2 class="titleText">Our <span>E</span>vents</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, libero.</p>
+        </div>
+        <div class="content" id = "event-content">
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title " id="event-name">Techno Tuesday</h2>
+                    <h3 class="title " id="event-date">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a class="btn" id="eventToggler">View More</a>
+        </div>
+    </section>
+    <section class="services" id="bars">
+        <div class="title">
+            <h2 class="titleText">Our <span>B</span>ars</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, libero.</p>
+        </div>
+        <div class="content" id="bar-content">
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a class="btn" id='barToggle'>View More</a>
+        </div>
+    </section>
+    <section class="services" id="clubs">
+        <div class="title">
+            <h2 class="titleText">Our <span>C</span>lubs</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, libero.</p>
+        </div>
+        <div class="content" id="club-content">
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="/img/event-example.jpg">
+                </div>
+                <div class="text">
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#" class="btn clubToggler" id="clubToggler">View More</a>
+        </div>
+    </section>
+    <script src="animation.js"></script>
+    <script src="Ajax Scripts/main.js"></script>
+</body>
+</html>
