@@ -50,6 +50,7 @@ eventsdb.nameEvents = (name) => {
 };
 
 
+
 //GET ALL BARS FROM THE DATABASE
 
 eventsdb.allBars = (name) => {
@@ -159,5 +160,40 @@ eventsdb.nameClubs = (name) => {
     });
 
 };
+
+//GET CLUB BY NAME FROM THE DATABASE
+
+eventsdb.idClubs = (id) => {
+
+    return new Promise((resolve, reject) => {
+
+        pool.query("SELECT * FROM club WHERE id = ?", [id], (err, results) =>{
+
+            if(err){
+                return reject(err);
+            }
+
+            return resolve(results);
+        });
+    });
+
+}
+;
+eventsdb.idEvents = (id) => {
+
+    return new Promise((resolve, reject) => {
+
+        pool.query("SELECT * FROM event WHERE id = ?", [id], (err, results) =>{
+
+            if(err){
+                return reject(err);
+            }
+
+            return resolve(results);
+        });
+    });
+
+}
+
 
 module.exports = eventsdb;

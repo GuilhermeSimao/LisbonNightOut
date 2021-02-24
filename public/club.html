@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../bar.css">
+    <meta charset="UTF-8">
+    <meta namme="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+<body>
+    <header>
+        <a href="#" class= "nav-logo">NIGHT OUT<span>.</span></a>
+        <div class="menuToggle" onclick="menuToggle();"></div>
+        <ul class="navigation">
+            <li><a href="../#about" onclick="menuToggle();">About</a></li>
+            <li><a href="../#events" onclick="menuToggle();">Events</a></li>
+            <li><a href="../#bars" onclick="menuToggle();">Bars</a></li>
+            <li><a href="../#clubs" onclick="menuToggle();">Clubs</a></li>
+        </ul>
+    </header>
+    <section class = "bg">
+        <div class="bg-content">
+            <h2 class="title">WELCOME TO LISBON NIGHT OUT</h2>
+            <a href="#description" class="btn">INFO</a>
+        </div>
+    </section>
+    <section class="description" id="description">
+        <div class="row">
+            <div class="col50 description-text">
+                <h2 class="titleText"><span>D</span>escription</h2>
+                <p id="description-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nulla necessitatibus consequatur voluptas voluptatibus cum ex reiciendis, 
+                nisi ipsam. Ea nulla sit distinctio porro aspernatur excepturi, dolor nemo perferendis totam cupiditate!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio similique laborum impedit, 
+                error distinctio provident quae modi veritatis ipsa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Libero omnis ea eaque praesentium error at unde molestiae magni reiciendis ipsa iste,
+                perspiciatis, odio, officia perferendis eum ut vitae officiis. Minus.</p>
+                <h2 class="titleText"><span>A</span>ddress</h2>
+                <p id="address">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="titleText"><span>C</span>ontact</h2>
+                <p id="contact">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="titleText"><span>S</span>chedule</h2>
+                <p id="schedule">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col50">
+                <div class="img-container">
+                    <img id="barImg" src="/img/dj-about.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="public/animation.js"></script>
+<script src="../Ajax Scripts/club.js"></script>
+</body>
+</html>

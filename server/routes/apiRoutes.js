@@ -33,6 +33,21 @@ router.get('/events/:name', async (req, res, next) => {
 
 });
 
+//GET A EVENT WITH A SPECIFIC NAME
+
+router.get('/eventsID/:id', async (req, res, next) => {
+
+    try{
+        let results = await db.idEvents(req.params.id);
+        res.json(results);
+    }
+    catch(e){
+        console.log(e);
+        res.sendStatus(500);
+    }
+
+});
+
 //GETS A EVENT DESCRIPTION FROM A SPECIFIC NAME
 
 router.get('/events/description/:name', async (req, res, next) => {
@@ -110,10 +125,10 @@ router.get('/clubs', async (req, res, next) => {
 
 //GET A CLUB WITH A SPECIFIC NAME
 
-router.get('/clubs/:name', async (req, res, next) => {
+router.get('/clubsID/:id', async (req, res, next) => {
 
     try{
-        let results = await db.nameClubs(req.params.name);
+        let results = await db.idClubs(req.params.id);
         res.json(results);
     }
     catch(e){

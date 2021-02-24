@@ -13,7 +13,7 @@ $(function(){
         dataType:'json',
         success: function(bars) {
             
-            barTitle = $('.bar-title');
+            barTitle = $('.title');
             descriptionText = $('#description-p');
             addressText = $('#address');
             contactText = $('#contact');

@@ -7,8 +7,8 @@ const app = express();
 app.use(express.json());
 
 app.use('/', express.static('public'));
-app.use('/events/:id', express.static('public/event.html'));
-app.use('/events/:id', express.static('public'));
+app.use('/event/:id', express.static('public/event.html'));
+app.use('/event/:id', express.static('public'));
 app.use('/bar/:id/', express.static('public/bar.html'));
 app.use('/bar/:id/', express.static('public'));
 app.use('/club/:id', express.static('public/club.html'));

@@ -16,24 +16,22 @@ $(function(){
             $.each(events,(i, event)=>{
                 if(i<4){
                     eventBox.append(
-                        '<div class="box '+ event.id +' ">' +
+                        '<div class="box event" id="'+ event.id +' ">' +
                             '<div class="img-container">'+
-                                '<img src="/img/event-example.jpg">'+
+                                '<img src="'+ event.PictureURL +'">'+
                             '</div>'+
                             '<div class="text">'+
                             ' <h2 class="title " id="event-name">'+ event.Name +'</h2>'+
-                                '<h3 class="title " id="event-date">'+event.Date+'</h3>'+
                             '</div>'+
                         '</div>');
                 }else{
                     eventBox.append(
-                        '<div class="box '+ event.id +'  extendedEvent " style = "display : none">' +
+                        '<div class="box extendedEvent event" id="'+ event.id +'"  " style = "display : none">' +
                             '<div class="img-container">'+
                                 '<img src="/img/event-example.jpg">'+
                             '</div>'+
                             '<div class="text">'+
                             ' <h2 class="title " id="event-name">'+ event.Name +'</h2>'+
-                                '<h3 class="title " id="event-date">'+event.Date+'</h3>'+
                             '</div>'+
                         '</div>');
                 }
@@ -80,7 +78,7 @@ $(function(){
                 }
                 else{
                     barBox.append(
-                        '<div class="box extendedBar" id="' + bar.id +'" style = "display : none">' +
+                        '<div class="box bar extendedBar" id="' + bar.id +'" style = "display : none">' +
                             '<div class="img-container">'+
                                 '<img src="'+bar.PictureURL+'">'+
                             '</div>'+
@@ -107,14 +105,6 @@ $(function(){
             
         }
     });
-
-   //FAZ O REDIRECT PARA A PAGINA DE UM DETERMINADO BAR
-    $(document).on('click', '.bar', function () {
-        var id = $(this).attr('id');
-        console.log(id);
-        window.location.href = "/bar/" + id;
-    });
-
     //  LOAD CLUB CONTENT ON MAIN PAGE
     $.ajax({
         type: 'GET',
@@ -142,7 +132,7 @@ $(function(){
                 }
                 else{
                     clubBox.append(
-                        '<div class="box extendedClub" id="' + club.id +'" style = "display : none">' +
+                        '<div class="box club extendedClub" id="' + club.id +'" style = "display : none">' +
                             '<div class="img-container">'+
                                 '<img src="'+club.PictureURL+'">'+
                             '</div>'+
@@ -159,6 +149,31 @@ $(function(){
             
         }
     });
+
+    
+
+//FAZ O REDIRECT PARA A PAGINA DE UM DETERMINADO BAR
+$(document).on('click', '.bar', function () {
+    var id = $(this).attr('id');
+    console.log(id);
+    window.location.href = "/bar/" + id;
+});
+
+//FAZ O REDIRECT PARA A PAGINA DE UM DETERMINADO EVENTO
+$(document).on('click', '.event', function () {
+    var id = $(this).attr('id');
+    console.log(id);
+    window.location.href = "/event/" + id;
+});
+
+//FAZ O REDIRECT PARA A PAGINA DE UM DETERMINADO CLUBE
+$(document).on('click', '.club', function () {
+    var id = $(this).attr('id');
+    console.log(id);
+    window.location.href = "/club/" + id;
+});
+
+
 });
 
 

@@ -161,6 +161,8 @@ p
 section
 {
     padding: 100px;
+    
+    min-height: 100vh;
 }
 
 .row
