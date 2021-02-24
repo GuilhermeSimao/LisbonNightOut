@@ -154,6 +154,68 @@ p
 {
     background:rgb(180, 51, 255, 60%);
 }
+/* 
+    DESCRIPTION SECTION
+*/
+
+section
+{
+    padding: 100px;
+}
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50
+{
+    position: relative;
+    width:48%;
+    
+    min-height:50vh;
+}
+
+.titleText
+{
+    color:black;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.description-text
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titleText span
+{
+    color:rgb(180, 51, 255, 60%);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .img-comtainer
+{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col50 .img-container img
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 @media (max-width: 991px)
@@ -229,6 +291,34 @@ p
         font-size: 1em;
         color: cornsilk;
     
+    }
+    .titleText
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .description-text
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .row
+    {
+        flex-direction: column;
+    }
+    .row .col50
+    {
+        position: relative;
+        width:100%;    
+    
+    }
+    .row .col50 .img-container
+    {
+        height: 300px;
+        margin-top: 20px;
     }
 }
 @media (max-width: 991px)
