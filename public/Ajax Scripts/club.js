@@ -30,10 +30,12 @@ $(function(){
                 title.append(club.Name);
                 descriptionText.append(club.Description);
                 addressText.append(club.Address);
-                contactText.append(club.Contacto);
+                contactText.append(club.Contact);
                 scheduleText.append(club.horario);
                 console.log(club.Name);
                 $("#barImg").attr("src", club.PictureURL);
+                addressText.append('<p id="lat" class="'+club.Lat+'" style = "display : none"></p>'+
+                                   '<p id="long" class="'+club.Long+'" style = "display : none"></p>');
             });
 
             

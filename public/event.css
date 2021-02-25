@@ -161,8 +161,6 @@ p
 section
 {
     padding: 100px;
-    
-    min-height: 100vh;
 }
 
 .row
@@ -218,7 +216,14 @@ section
     height: 100%;
     object-fit: cover;
 }
-
+/* 
+    MAP SECTION
+*/
+#map
+{
+    height: 300px;
+    width: 100%;
+}
 
 @media (max-width: 991px)
 {

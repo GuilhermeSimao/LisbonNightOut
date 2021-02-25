@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../bar.css">
+    <link rel="stylesheet" href="../event.css">
     <meta charset="UTF-8">
     <meta namme="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar</title>
+    <title>Event</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
 </head>
 <body>
     <header>
-        <a href="#" class= "nav-logo">NIGHT OUT<span>.</span></a>
+        <a href="../" class= "nav-logo">NIGHT OUT<span>.</span></a>
         <div class="menuToggle" onclick="menuToggle();"></div>
         <ul class="navigation">
-            <li><a href="../#about" onclick="menuToggle();">About</a></li>
+            <li><a href="../#about" onclick="menuToggle();">About</a></li>           
+            <li><a href="../#clubs" onclick="menuToggle();">Clubs</a></li> 
+            <li><a href="../#bars" onclick="menuToggle();">Bars</a></li>          
             <li><a href="../#events" onclick="menuToggle();">Events</a></li>
-            <li><a href="../#bars" onclick="menuToggle();">Bars</a></li>
-            <li><a href="../#clubs" onclick="menuToggle();">Clubs</a></li>
         </ul>
     </header>
     <section class = "bg">
@@ -39,8 +39,8 @@
                 perspiciatis, odio, officia perferendis eum ut vitae officiis. Minus.</p>
                 <h2 class="titleText"><span>A</span>ddress</h2>
                 <p id="address">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <h2 class="titleText"><span>C</span>ontact</h2>
-                <p id="contact">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="titleText"><span>v</span>enue</h2>
+                <p id="venue">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <h2 class="titleText"><span>S</span>chedule</h2>
                 <p id="schedule">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
@@ -51,8 +51,14 @@
             </div>
         </div>
     </section>
+    <section id ="map"></section>
 
 <script src="public/animation.js"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGXJipLd48ondE01BAUHpnROEQD-jWM-k&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 <script src="../Ajax Scripts/event.js"></script>
+<script src="public/map.js"></script>
 </body>
 </html>

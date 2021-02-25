@@ -145,7 +145,17 @@ $(function(){
                 
             });
 
-            
+            $('#clubToggler').click(()=>{
+                $('.extendedClub').toggle();
+                if($('#clubToggler').html() == "View More")
+                {
+                    $('#clubToggler').html("Show Less") 
+                }
+                else
+                {
+                    $('#clubToggler').html("View More") 
+                }
+            });
             
         }
     });

@@ -16,24 +16,25 @@ $(function(){
             title = $('.title');
             descriptionText = $('#description-p');
             addressText = $('#address');
-            contactText = $('#contact');
             scheduleText = $('#schedule');
+            venueText = $('#venue');
 
             title.empty();
             descriptionText.empty();
             addressText.empty();
-            contactText.empty();
             scheduleText.empty();
+            venueText.empty();
 
 
             $.each(events,(i, event)=>{
                 title.append(event.Name);
                 descriptionText.append(event.Description);
                 addressText.append(event.Address);
-                contactText.append(event.Contacto);
-                scheduleText.append(event.horario);
-                console.log(event.Name);
+                scheduleText.append(event.Date);
+                venueText.append(event.Venue);
                 $("#barImg").attr("src", event.PictureURL);
+                addressText.append('<p id="lat" class="'+event.Lat+'" style = "display : none"></p>'+
+                                   '<p id="long" class="'+event.Long+'" style = "display : none"></p>');
             });
 
             

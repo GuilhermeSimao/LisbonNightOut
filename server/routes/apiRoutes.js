@@ -33,7 +33,7 @@ router.get('/events/:name', async (req, res, next) => {
 
 });
 
-//GET A EVENT WITH A SPECIFIC NAME
+//GET A EVENT WITH A SPECIFIC ID
 
 router.get('/eventsID/:id', async (req, res, next) => {
 
@@ -123,7 +123,7 @@ router.get('/clubs', async (req, res, next) => {
 
 });
 
-//GET A CLUB WITH A SPECIFIC NAME
+//GET A CLUB WITH A SPECIFIC ID
 
 router.get('/clubsID/:id', async (req, res, next) => {
 
@@ -138,4 +138,18 @@ router.get('/clubsID/:id', async (req, res, next) => {
 
 });
 
+//GET A CLUB WITH A SPECIFIC NAME
+
+router.get('/clubs/:name', async (req, res, next) => {
+
+    try{
+        let results = await db.nameClubs(req.params.name);
+        res.json(results);
+    }
+    catch(e){
+        console.log(e);
+        res.sendStatus(500);
+    }
+
+});
 module.exports = router;

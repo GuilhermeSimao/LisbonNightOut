@@ -14,18 +14,16 @@
         <div class="menuToggle" onclick="menuToggle();"></div>
         <ul class="navigation">
             <li><a href="#about" onclick="menuToggle();">About</a></li>
-            <li><a href="#events" onclick="menuToggle();">Events</a></li>
+            <li><a href="#clubs" onclick="menuToggle();">Clubs</a></li>            
             <li><a href="#bars" onclick="menuToggle();">Bars</a></li>
-            <li><a href="#clubs" onclick="menuToggle();">Clubs</a></li>
+            <li><a href="#events" onclick="menuToggle();">Events</a></li>
         </ul>
     </header>
     <section class = "bg">
         <div class="bg-content">
             <h2>WELCOME TO LISBON NIGHT OUT</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Pariatur delectus quisquam quas saepe vero sed ipsam rem velit.
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#events" class="btn">Check Upcoming Events</a>
+            <p>Discover the best of Lisbon’s nightlife, including clubs, bars and events!</p>
+            <a href="#clubs" class="btn">Check Out some Clubs</a>
         </div>
     </section> 
     <section class="about" id="about">
@@ -48,19 +46,19 @@
             </div>
         </div>
     </section>
-    <section class="services" id="events">
+    <section class="services" id="clubs">
         <div class="title">
-            <h2 class="titleText">Our <span>E</span>vents</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, libero.</p>
+            <h2 class="titleText">Our <span>C</span>lubs</h2>
+            <p>Check out some of the best clubs in Lisbon!</p>
         </div>
-        <div class="content" id = "event-content">
+        <div class="content" id="club-content">
             <div class="box">
                 <div class="img-container">
                     <img src="/img/event-example.jpg">
                 </div>
                 <div class="text">
-                    <h2 class="title " id="event-name">Techno Tuesday</h2>
-                    <h3 class="title " id="event-date">27/5/20</h3>
+                    <h2 class="title">Techno Tuesday</h2>
+                    <h3 class="title">27/5/20</h3>
                 </div>
             </div>
             <div class="box">
@@ -128,13 +126,13 @@
             </div>
         </div>
         <div class="title">
-            <a class="btn" id="eventToggler">View More</a>
+            <a class="btn clubToggler" id="clubToggler">View More</a>
         </div>
     </section>
     <section class="services" id="bars">
         <div class="title">
             <h2 class="titleText">Our <span>B</span>ars</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, libero.</p>
+            <p>Check out some of the best bars in Lisbon!</p>
         </div>
         <div class="content" id="bar-content">
             <div class="box">
@@ -214,19 +212,19 @@
             <a class="btn" id='barToggle'>View More</a>
         </div>
     </section>
-    <section class="services" id="clubs">
+    <section class="services" id="events">
         <div class="title">
-            <h2 class="titleText">Our <span>C</span>lubs</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, libero.</p>
+            <h2 class="titleText">Our <span>E</span>vents</h2>
+            <p>Check out some of the best upcoming events in Lisbon!</p>
         </div>
-        <div class="content" id="club-content">
+        <div class="content" id = "event-content">
             <div class="box">
                 <div class="img-container">
                     <img src="/img/event-example.jpg">
                 </div>
                 <div class="text">
-                    <h2 class="title">Techno Tuesday</h2>
-                    <h3 class="title">27/5/20</h3>
+                    <h2 class="title " id="event-name">Techno Tuesday</h2>
+                    <h3 class="title " id="event-date">27/5/20</h3>
                 </div>
             </div>
             <div class="box">
@@ -294,7 +292,7 @@
             </div>
         </div>
         <div class="title">
-            <a href="#" class="btn clubToggler" id="clubToggler">View More</a>
+            <a class="btn" id="eventToggler">View More</a>
         </div>
     </section>
     <script src="animation.js"></script>

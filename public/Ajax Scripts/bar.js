@@ -18,6 +18,7 @@ $(function(){
             addressText = $('#address');
             contactText = $('#contact');
             scheduleText = $('#schedule');
+            mapSection = $('#map');
 
             barTitle.empty();
             descriptionText.empty();
@@ -30,13 +31,22 @@ $(function(){
                 barTitle.append(bar.Name);
                 descriptionText.append(bar.Description);
                 addressText.append(bar.Address);
+                addressText.append('<p id="lat" class="'+bar.Lat+'" style = "display : none"></p>'+
+                                   '<p id="long" class="'+bar.Long+'" style = "display : none"></p>');
                 contactText.append(bar.Contacto);
                 scheduleText.append(bar.horario);
                 console.log(bar.Name);
                 $("#barImg").attr("src", bar.PictureURL);
+                addressText.attr("ex","hello");
+
+                
             });
 
             
         }
-    });
+    }
+    );
 });
+
+
+
