@@ -18,4 +18,4 @@ function initMap() {
       map: map,
     });
   }
-,500);
+,800);
